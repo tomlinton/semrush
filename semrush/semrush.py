@@ -19,7 +19,7 @@ engine_database = {
 }
 
 
-class ClientException(BaseException):
+class SemrushClientException(BaseException):
 
     def __init__(self, error):
         self.error = error
@@ -28,11 +28,11 @@ class ClientException(BaseException):
         return repr(self.error)
 
 
-class Client(object):
+class SemrushClient(object):
 
     def __init__(self, key, search_engine='google.com'):
         if not key:
-            raise ClientException('Valid SEMRush API key required')
+            raise SemrushClientException('Valid SEMRush API key required')
 
         if search_engine not in engine_database.keys():
             raise NotImplementedError
@@ -110,4 +110,4 @@ class Client(object):
         if response.status_code == 200:
             return response.content
         else:
-            raise ClientException(response.content)
+            raise SemrushClientException(response.content)
