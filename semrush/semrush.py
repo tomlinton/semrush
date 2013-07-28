@@ -30,18 +30,17 @@ class SemrushClientException(BaseException):
 
 class SemrushClient(object):
 
-    def __init__(self, key, search_engine='google.com'):
+    def __init__(self, key, database='us'):
         if not key:
             raise SemrushClientException('Valid SEMRush API key required')
 
-        if search_engine not in engine_database.keys():
+        if database not in engine_database.values():
             raise NotImplementedError
 
-        database = self.get_database(search_engine)
         self.url = 'http://%s.api.semrush.com/' % database
         self.key = key
 
-    def get_database(self, search_engine='google.com'):
+    def get_database_from_search_engine(self, search_engine='google.com'):
         if search_engine in engine_database:
             return engine_database[search_engine]
         else:
