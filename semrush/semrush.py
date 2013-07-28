@@ -50,7 +50,7 @@ class SemrushClient(object):
         return self._call_report('domain_rank')
 
     def get_keyword_report(self, phrase):
-        return self._call_report('phrase_thiss', phrase=phrase)
+        return self._call_report('phrase_this', phrase=phrase)
 
     def get_organic_keywords_report(self):
         return self._call_report('domain_organic')
