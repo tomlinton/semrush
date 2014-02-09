@@ -15,6 +15,21 @@ engine_database = {
     'google.it': 'it',
     'google.br': 'br',
     'google.com.au': 'au',
+    'google.be': 'be',
+    'google.com.ar': 'ar',
+    'google.mx': 'mx',
+    'google.ch': 'ch',
+    'google.dk': 'dk',
+    'google.fi': 'fi',
+    'google.ie': 'ie',
+    'google.il': 'il',
+    'google.nl': 'nl',
+    'google.no': 'no',
+    'google.pl': 'pl',
+    'google.se': 'se',
+    'google.com.tr': 'tr',
+    'google.com.sg': 'sg',
+    'google.com.hk': 'hk',
     'bing.com': 'us.bing'
 }
 
