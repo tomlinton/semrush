@@ -30,7 +30,7 @@ engine_database = {
     'google.com.tr': 'tr',
     'google.com.sg': 'sg',
     'google.com.hk': 'hk',
-    'bing.com': 'us.bing'
+    'bing.com': 'bing-us'
 }
 
 
